@@ -5,7 +5,7 @@ return(
     <input type="search" 
     className= "search"
     placeholder={props.placeholder}
-      onChange={props}>
+      onChange={props.handleChange}>
           
       </input>
 
