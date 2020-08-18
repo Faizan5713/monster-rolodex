@@ -1,18 +1,16 @@
 import React from 'react';
-import './card-list.style.css';
+import './card-style.css';
 
-const CardList = props => (
-    <div className='card-list'>
-        {
-            props.monster.map(monster =>(
+const Card = ({monster}) => (
+
+    <div className='card'>
                 <div>
                     <img src={`https://robohash.org/${monster.id}?set=set2&size=180x180`} />
             <h2 key={monster.id}>{monster.name}</h2>
             <p>{monster.email}</p>
             <p>{monster.name}</p>
                 </div>
-            ))}
         </div>
 );
 
-export default CardList;
+export default Card;
